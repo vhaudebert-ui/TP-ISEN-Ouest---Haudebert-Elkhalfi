@@ -1,7 +1,11 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+
+    <!-- === STYLES HEADER === -->
     <style>
 html {
     font-family: Open Sans,sans-serif;
@@ -14,7 +18,7 @@ html {
 
 /* Organisation interne */
 .header-container {
-  max-width: 1400px; /* un peu plus large pour aérer */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -24,27 +28,27 @@ html {
 
 /* Logo */
 .header-logo img {
-  height: 45px; /* logo moins haut */
+  height: 45px;
   width: auto;
 }
 
 /* Navigation */
 .header-nav {
-  background: #e30613; /* Rouge ISEN */
-  flex: 1; /* occupe toute la largeur dispo */
-  margin-left: 40px; /* espace entre logo et barre rouge */
+  background: #e30613;
+  flex: 1;
+  margin-left: 40px;
 }
 
 .header-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around; /* liens espacés sur toute la largeur */
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
 
 .header-nav li {
-  flex: 1; /* chaque lien occupe une largeur égale */
+  flex: 1;
   text-align: center;
 }
 
@@ -62,32 +66,70 @@ html {
   text-decoration: underline;
 }
     </style>
-</head>
-<body>
-<header class="header-isen">
-  <div class="header-container">
-    <!-- Logo -->
-    <a href="/" class="header-logo">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
-    </a>
 
-    <!-- Navbar -->
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#">Liens à venir</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-</body>
-
-
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <!-- === STYLES BLOC CENTRAL === -->
     <style>
+html {
+  font-family: Open Sans,sans-serif;
+}
+/* TEXT_IMG */
+.block-devenir {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+/* Conteneur global */
+.block-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Titre en haut */
+.block-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Deux colonnes */
+.block-columns-img {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Colonne texte */
+.block-text {
+  flex: 1;
+  padding-left: 5%;
+}
+
+.block-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* Colonne image */
+.block-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.block-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+  </style>
+
+  <!-- === STYLES FOOTER === -->
+  <style>
 html {
   font-family: Open Sans,sans-serif;
 }
@@ -197,29 +239,58 @@ html {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-    </style>
+  </style>
 </head>
+
 <body>
+
+<!-- === HEADER === -->
+<header class="header-isen">
+  <div class="header-container">
+    <a href="/" class="header-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+    </a>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Liens à venir</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- === BLOC CENTRAL === -->
+<section class="block-devenir">
+  <div class="block-container">
+    <h1 class="block-title">Formations post-bac</h1>
+    <div class="block-columns-img">
+      <div class="block-text">
+        <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+        <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+        <p>Au cours de ces 3 années, les élèves acquièrent une solide formation dans les sciences et les technologies numériques tout en approfondissant une spécialité dès la première année après le baccalauréat. Plusieurs passerelles sont possibles durant les 3 premières années si l’étudiant souhaite changer de cycle.</p>
+        <p>Après la deuxième année, il est possible de choisir une poursuite d’études sous statut étudiant ou d’opter pour un contrat d’apprentissage.</p>
+        <p>Au niveau Master 1, qu’il soit sous statut étudiant ou apprenti, chaque élève accède à un large choix de domaines professionnels sans concours ni critère de classement.</p>
+      </div>
+      <div class="block-image">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png" alt="Schéma des études ISEN Ouest">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- === FOOTER === -->
 <footer class="site-footer">
   <div class="footer-container">
-
-    <!-- Colonne 1 : Logo + bouton -->
     <div class="footer-col footer-col-logo">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
-           alt="ISEN Ouest" class="footer-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" alt="ISEN Ouest" class="footer-logo">
     </div>
-
-    <!-- Zone titres + colonnes 2-4 -->
     <div class="footer-links-section">
-      <!-- Titre général -->
       <p class="footer-cities">Texte à venir</p>
-
-
+    </div>
   </div>
-
-  <!-- Bas de page -->
+  <div class="footer-bottom">
+    &copy;
+  </div>
 </footer>
-<div class="footer-bottom">
-  &copy;
-</div>
+
 </body>
+</html>
