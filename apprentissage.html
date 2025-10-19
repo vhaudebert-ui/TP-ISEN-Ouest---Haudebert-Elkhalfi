@@ -4,46 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ISEN</title>
-  <style>
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: Open Sans, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;   /* sticky footer */
-    }
-    header { border-bottom: 1px solid #e5e5e5; }
 
-    /* NAV */
-    .header-isen { background:#fff; }
-    .header-container{max-width:1400px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;}
-    .header-logo img{height:45px}
-    .header-nav{background:#e30613;flex:1;margin-left:40px}
-    .header-nav ul{list-style:none;display:flex;justify-content:space-around;margin:0;padding:0}
-    .header-nav a{display:block;padding:14px 10px;font-size:1.2em;font-weight:bold;color:#fff;text-decoration:none}
-
-    /* CONTENU */
-    main { flex: 1; }            /* pousse le footer en bas */
-    .block-devenir{background:#fff;padding:60px 20px}
-    .block-container{max-width:1200px;margin:0 auto}
-    .block-title{font-size:42px;font-weight:700;color:#000;margin-bottom:40px}
-    .block-columns-img{display:flex;gap:40px;align-items:center}
-    .block-text{flex:1;padding-left:5%}
-    .block-text p{font-size:16px;line-height:1.7;color:#333;margin-bottom:18px}
-    .block-image{flex:1;display:flex;justify-content:center}
-    .block-image img{max-width:100%;height:auto;border-radius:6px}
-
-    /* FOOTER */
-    .site-footer{background:#000;color:#fff;padding:40px 20px 20px}
-    .footer-container{display:flex;max-width:1200px;margin:0 auto;gap:40px;flex-wrap:wrap}
-    .footer-col-logo{flex:1;min-width:220px;display:flex;flex-direction:column}
-    .footer-logo{height:100px;margin:30px 0 15px}
-    .footer-links-section{flex:3;display:flex;flex-direction:column}
-    .footer-cities{font-size:40px;font-weight:700;margin:0 0 20px}
-    .footer-bottom{background:#fff;color:#000;text-align:center;padding:12px 0;margin-top:20px}
-  </style>
+  <link href="style.css" rel="stylesheet">
 </head>
+
+
 <body>
 
   <header class="header-isen">
@@ -56,6 +21,21 @@
       </nav>
     </div>
   </header>
+
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <div class="breadcrumb-container">
+      <div class="breadcrumb-content">
+        <a href="ACOMPLETER">Accueil</a>
+        <span class="separator">›</span>
+        <a href="ACOMPLETER">Devenir ingénieur</a>
+        <span class="separator">›</span>
+        <span class="current">Parcours international</span>
+      </div>
+
+      <!-- élément qui remplit la partie droite et affiche la ligne rouge -->
+      <div class="breadcrumb-line" aria-hidden="true"></div>
+    </div>
+  </nav>
 
   <main>
     <section class="block-devenir">
